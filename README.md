@@ -5,8 +5,6 @@ Beyond providing a functional macro, a primary goal of this repository is to ill
 
 # Overview
 
-# Overview
-
 The macro performs the following operations:
 
 - Z-projection of confocal stacks using standard deviation to enhance contrast.
