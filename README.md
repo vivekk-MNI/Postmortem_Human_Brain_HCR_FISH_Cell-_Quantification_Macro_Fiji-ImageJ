@@ -4,23 +4,20 @@ This repository provides a custom Fiji macro to batch-process and quantify HCR-F
 Beyond providing a functional macro, a primary goal of this repository is to illustrate the analytical considerations and workflow development involved in complex fluorescence image quantification. The optimal processing strategy depends on the characteristics of the fluorescence signal (cellular vs. punctate/granular), signal amplification, cellular morphology, and, importantly, the specific biological questions being addressed.
 
 # Overview
+
+# Overview
+
 The macro performs the following operations:
 
-Z-projection of confocal stacks using standard deviation to enhance contrast.
+- Z-projection of confocal stacks using standard deviation to enhance contrast.
+- Background subtraction and channel splitting (DAPI, Gene1, Gene2).
+- Marker-specific segmentation using median and Gaussian filtering.
+- Size and shape filtering to exclude debris and artifacts.
+- DAPI-based nuclear proximity filtering using StarDist masks.
+- Logical colocalization of dual-labeled cells.
+- Layer-wise quantification using cortical layer ROIs.
+- Export of cell counts and area-normalized densities.
 
-Background subtraction and channel splitting (DAPI, Gene1, Gene2).
-
-Marker-specific segmentation via median and Gaussian filtering and Phansalkar local thresholding.
-
-Size and shape filtering to exclude small debris and large artifacts.
-
-DAPI-based nuclear proximity filtering using StarDist-generated DAPI masks.
-
-Logical colocalization of dual-labeled cells (e.g., SST+/Reelin+).
-
-Layer-wise quantification using pre-drawn cortical layer ROIs.
-
-Export of per-layer counts, area-normalized densities, and optional cell masks.
 
 Methodological note: This workflow represents an approach optimized for the imaging characteristics and biological objectives of the present study, rather than a universal segmentation solution. Individual processing steps and parameters should be evaluated and adapted to the signal characteristics, tissue morphology, and quantification objectives of other datasets.
 
