@@ -1,5 +1,9 @@
 # Postmortem_Human_Brain_HCR_FISH_Cell_Quantification_Macro_(Fiji-ImageJ)
-This repository provides a custom Fiji macro to batch-process and quantify HCR FISH-labeled cells in frozen postmortem human cortical tissue, incorporating nuclear proximity filtering and layer-specific analysis. The macro supports flexible processing of two independent gene panels.
+This repository provides a custom Fiji macro to batch-process and quantify HCR FISH-labeled cells in frozen postmortem human cortical tissue, incorporating nuclear proximity filtering and layer-specific analysis. 
+
+Beyond providing a functional macro, a primary goal of this repository is to illustrate the analytical considerations and workflow development required for complex fluorescence image quantification. The optimal processing strategy depends on the nature of the fluorescence signal (cellular vs. punctate/granular), signal amplification, cellular morphology, and, importantly, the specific biological questions being addressed.
+
+The macro supports flexible processing of two independent gene panels.
 
 Our gene panels: 
 Panel 1: SST / Reelin
@@ -15,6 +19,8 @@ DAPI-based nuclear proximity filtering using StarDist DAPI masks.
 Logical colocalization of dual-labeled cells (e.g., SST+/Reelin+).
 Layer-wise quantification using pre-drawn cortical layer ROIs.
 Export of per-layer counts, area-normalized densities, and optional cell masks.
+
+Methodological note: This workflow represents one approach optimized for the imaging characteristics and biological objectives of the present study, rather than a universal segmentation solution. Individual processing steps and parameters should be evaluated and adapted to the signal characteristics, tissue morphology, and quantification objectives of other datasets.
 
 # Input Requirements
 Confocal image files (.tif) converted from Olympus .oir files (see notes below).
