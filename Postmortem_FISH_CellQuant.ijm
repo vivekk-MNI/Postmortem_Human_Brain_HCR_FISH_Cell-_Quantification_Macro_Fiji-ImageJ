@@ -181,9 +181,9 @@ function label_Cortical_layers() {
     roiManager("Select", 1); roiManager("Rename", title + "_Cortical_Layer_2");
     roiManager("Select", 2); roiManager("Rename", title + "_Cortical_Layer_3");
     roiManager("Select", 3); roiManager("Rename", title + "_Cortical_Layer_4");
-    roiManager("Select", 4); roiManager("Rename", title + "_Cortical_Layer_5a");
-    roiManager("Select", 5); roiManager("Rename", title + "_Cortical_Layer_5b");
-    roiManager("Select", 6); roiManager("Rename", title + "_Cortical_Layer_6");
+    roiManager("Select", 4); roiManager("Rename", title + "_Cortical_Layer_5");
+    roiManager("Select", 5); roiManager("Rename", title + "_Cortical_Layer_6a");
+    roiManager("Select", 6); roiManager("Rename", title + "_Cortical_Layer_6b");
 }
 
 
